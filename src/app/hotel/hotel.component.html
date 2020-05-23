@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-title>BestHotel.com</ion-title>
+    <i>Les meilleurs hôtels à travers le monde !</i>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ 
+    <ion-row>
+      
+        
+          <ion-item *ngFor="let hotel of (listeHotels|async)" [routerLink]="['./',hotel.id]">{{ hotel.nom }} ({{ hotel.ville }})</ion-item>
+
+  
+
+    </ion-row>
+    
+</ion-content>
