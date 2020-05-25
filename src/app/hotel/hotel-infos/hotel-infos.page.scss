@@ -1,0 +1,46 @@
+ion-header{
+    text-align:center;
+    background-color:#763568;
+    color:white;
+}
+
+.ion_div{
+    background-image: url('https://www.hotelvirgina.com/wp-content/uploads/2015/06/hotel-virgina-paris-SLIDE-03-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+    justify-content: center;
+    text-align:center;
+}
+
+ion-row{
+    justify-content:center;
+    margin:0;
+}
+
+ion-select{
+    color:white;
+    font-weight:bold;
+}
+
+ion-label{
+    align-self: center;
+}
+
+div{
+    position: absolute;
+    background-color:#763568;
+    color:white;
+    align-self: center; 
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hotel_name{
+    align-self: top;
+    margin-top:25%;
+    font-weight:bold;
+}

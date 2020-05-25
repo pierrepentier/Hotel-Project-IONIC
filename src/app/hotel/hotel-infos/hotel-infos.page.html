@@ -1,12 +1,41 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{selectedHotel?.nom}}</ion-title>
+    <ion-title>Réservation </ion-title>
     <ion-img > </ion-img>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let categorie of (listeCategories|async)">{{categorie.nom}}</ion-item>
-  </ion-list>
+  <ion-row class="ion_div">
+    <ion-row class="hotel_name">
+      <h3>{{selectedHotel?.nom}} - {{selectedHotel?.ville}}</h3>
+    </ion-row>
+    <div>
+      <ion-row>
+        <ion-label>Nombre de personnes</ion-label>
+        <ion-select placeholder="choisir">
+          <ion-select-option>1</ion-select-option>
+          <ion-select-option>2</ion-select-option>
+          <ion-select-option>3</ion-select-option>
+          <ion-select-option>4</ion-select-option>
+          <ion-select-option>5</ion-select-option>
+        </ion-select>
+      </ion-row>
+      <ion-row>
+        <ion-label>Type de chambre</ion-label>
+        <ion-select placeholder="choisir">
+          <ion-select-option *ngFor="let categorie of (listeCategories|async)" value="{{categorie.id}}">{{categorie.nom}}</ion-select-option>
+        </ion-select>
+      </ion-row>
+      <ion-row>
+        <ion-label>Date d'arrivée</ion-label>
+        <ion-datetime displayFormat="DD MM YYYY" placeholder="Choisissez une date"></ion-datetime>
+      </ion-row>
+      <ion-row>
+        <ion-label>Date de départ</ion-label>
+        <ion-datetime displayFormat="DD MM YYYY" placeholder="Chosissez une date"></ion-datetime>
+      </ion-row>
+      <ion-button>Réserver</ion-button>
+    </div>
+  </ion-row>
 </ion-content>

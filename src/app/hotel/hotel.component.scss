@@ -1,6 +1,9 @@
 ion-header{
     text-align:center;
+    background-color:#763568;
+    color:white;
 }
+
 
 ion-title{
     text-align:center;
@@ -8,6 +11,8 @@ ion-title{
 
 ion-row{
     justify-content:center;
+    text-align:center;
+
 }
 ion-form{
     text-align:center;
@@ -16,3 +21,19 @@ ion-form{
 ion-select{
     padding:auto;
 }
+
+.ion_div{
+    background-image: url('https://www.hotelvirgina.com/wp-content/uploads/2015/06/hotel-virgina-paris-SLIDE-03-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100%;
+}
+
+.first_row{
+    margin-top:40%;
+}
+.second_row{
+    margin-top:5%;
+}
+
+
